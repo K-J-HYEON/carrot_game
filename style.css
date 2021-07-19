@@ -1,0 +1,131 @@
+button {
+    /* border: none; */
+    /* outline: none; */
+    cursor: pointer;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+}
+
+.game {
+    /* 밑에 2개 이걸 안줘서 게임필드 색깔이 이상하게 먹힘 */
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    background: url(img/background.png) center/cover;
+    border-radius: 20px;
+}
+
+.game__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.game__button {
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    border: 4px solid black;
+    font-size: 24px;
+    transition: transform 300ms ease-in;
+}
+
+
+.game__timer {
+    width: 100px;
+    background-color: white;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 32px;
+    margin-top: 8px;
+    /* 추가 */
+    visibility: hidden;
+    user-select: none;
+    cursor: auto;
+}
+
+.game__score {
+    text-align: center;
+    /* width height 50에서 60으로줌 */
+    width: 60px;
+    height: 60px;
+    margin-top: 8px;
+    font-size: 38px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: darksalmon;
+    color: white;
+    /* 추가 */
+    visibility: hidden;
+    user-select: none;
+    cursor: auto;
+}
+
+.game__button:hover {
+    transform: scale(1.1);
+}
+
+.game__field {
+    /* 그림들이 알맞게 오도록 position 추가 */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* 왜 이상하게 먹히냐 */
+    margin-top: 40px;
+    /* background-color: blue; */
+    /* opacity: 0.4; */
+}
+
+.pop-up {
+    display: block;
+    width: 400px;
+    height: 140px;
+    margin: auto;
+    padding: 20px;
+    /* opacity: 0.7; */
+    /* opacity안주고 백그라운드에 #0000~주면 배경만 투명해짐 */
+    background-color: #00000090;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    transform: translateY(-150%);
+}
+
+.pop-up--hide {
+    display: none;
+}
+
+.pop-up__refresh {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: wheat;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.pop-up__message {
+    display: block;
+    font-size: 38px;
+}
+
+
+.carrot,
+.bug {
+    transition: transform 100ms ease-in;
+}
+
+
+.carrot:hover,
+.bug:hover {
+    transform: scale(1.1);
+}
+
+
