@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun Game</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script type="module" src="src/main_refactoring.js" defer></script>
     <script src="https://kit.fontawesome.com/8c45de293e.js" crossorigin="anonymous"></script>
 </head>
 
@@ -22,6 +22,8 @@
         </header>
         <section class="game__field"></section>
     </section>
+    <!-- game섹션은 메인.js에 -->
+    <!-- 팝업섹션은 팝업.js에 -->
     <section class="pop-up pop-up--hide">
         <button class="pop-up__refresh">
             <i class="fas fa-redo"></i>
