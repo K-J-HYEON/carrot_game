@@ -5,9 +5,9 @@
 'use strict';
 
 const CARROT_SIZE = 80;
-const CARROT_COUNT = 20;
-const BUG_COUNT = 20;
-const GAME_DURATION_SEC = 20;
+const CARROT_COUNT = 5;
+const BUG_COUNT = 5;
+const GAME_DURATION_SEC = 5;
 
 
 
