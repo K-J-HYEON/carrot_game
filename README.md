@@ -1,5 +1,5 @@
 # carrot_game
-## 리드미 반드시 정리하자
+## 순수 JS로 구현
 
 ### 기술 스택
 #### Html / CSS / JavaScript
